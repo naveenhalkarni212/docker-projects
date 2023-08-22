@@ -1,0 +1,11 @@
+This is a Demo app for Docker.
+Fork the repository
+Folder consists of 2 files:
+Dockerfile
+app
+
+#Dockerfile
+Set of instructions are written to build docker image
+
+#app.py
+This file has the code for application or program.

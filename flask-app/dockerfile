@@ -1,0 +1,14 @@
+#base image
+FROM python:3
+
+#Workdir
+WORKDIR app/
+
+#Copy files
+COPY app.py .
+
+#install required libraries
+RUN pip install Flask
+
+#Run app
+CMD ["python","app.py"]
