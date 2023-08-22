@@ -1,0 +1,15 @@
+#Base image
+FROM openjdk:11
+
+#workdir
+WORKDIR app/
+
+#Copy files
+COPY Hello.java .
+
+#compile java
+RUN javac Hello.java
+
+#Run app
+CMD ["java","Hello"]
+
